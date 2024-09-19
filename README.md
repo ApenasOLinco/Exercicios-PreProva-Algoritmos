@@ -1,1 +1,1 @@
-Exercícios para fixação para uma prova de <b>Algoritmos De Programação<b>.
+Exercícios para fixação para a prova de <b>Algoritmos De Programação<b>.
