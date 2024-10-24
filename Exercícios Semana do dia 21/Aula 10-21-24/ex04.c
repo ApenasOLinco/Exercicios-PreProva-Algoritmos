@@ -12,11 +12,12 @@
 int main() {
     int matriz[3][4], soma[3], multiplicacao[4];
 
-    // Preencher a matriz com valores aleatorios
+    // Seed
     srand(time(NULL));
 
     printf("Matriz gerada:\n");
 
+    // Preencher a matriz com valores aleatorios e imprimí-la
     for(int i = 0; i < 3; i++) {
         for(int j = 0; j < 4; j++) {
             // Valores de 1 a 10 (inclusivo)
