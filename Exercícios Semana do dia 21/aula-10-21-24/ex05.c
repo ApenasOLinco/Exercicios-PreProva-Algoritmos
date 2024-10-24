@@ -28,7 +28,7 @@ int main() {
 
         for(int j = 0; j < 6; j ++) {
             // Valores decimais entre 1200 e 2600 (inclusivo)
-            salarios[i][j] = ((float)rand() / RAND_MAX) * 1200.0 + 1400;
+            salarios[i][j] = ((float)rand() / RAND_MAX) * 1200.0 + 1400.0;
             
             totalPago += salarios[i][j];
 

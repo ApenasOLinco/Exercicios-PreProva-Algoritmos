@@ -16,9 +16,24 @@ int main() {
     resultado[10];
 
     for(int i = 0; i < 10; i++) {
-        resultado[i] = i % 2 == 0
-            ? vetor[i] / 2 
-            : vetor[i] * 3;
+        /* 
+            O código abaixo desse comentário é um operador ternário, que funciona,
+            basicamente, como um if/else em uma só linha. É o mesmo que ter escrito:
+
+            """
+                if(i % 2 == 0) {
+                    resultado[i] = vetor[i] / 2;
+                }
+                else
+                    resultado[i] = vetor[i] * 3;
+            """
+
+            Apenas tenha isso em mente:
+            - O código entre parênteses é a condição a ser testada (não precisa estar entre parênteses, mas é bom para o entendimento);
+            - O que vem depois do "?" na expressão é o valor caso a condição seja verdadeira;
+            - Por fim, o que vem depois do ":" é o valor caso ela seja falsa, o equivalente a um bloco "else".
+        */
+        resultado[i] = (i % 2 == 0) ? vetor[i] / 2 : vetor[i] * 3;
         
         printf("indice %i: %i\n", i, resultado[i]);
     }

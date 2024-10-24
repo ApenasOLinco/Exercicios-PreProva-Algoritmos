@@ -9,40 +9,30 @@
 #include <stdlib.h>
 #include <time.h>
 
-void encontrarEm(int* arr, int arrSize, int alvo) {
-    int encontrados = 0;
-    for(int i = 0; i < arrSize; i++) {
-        if(arr[i] == alvo) {
-            printf(
-                "Encontrado valor %i:\n    Posicao: %i\n\n",
-                alvo, i
-            );
-
-            encontrados ++;
-        }   
-    }
-
-    if(encontrados == 0) {
-        printf("Nao ha ocorrencias do numero no array.\n\n");
-    }
-}
-
 int main() {
     int numeros[1000], alvo = 0;
     srand(time(NULL));
 
+    /* Preenchimento do vetor */
     for(int i = 0; i < 1000; i ++) {
+        // Números no intervalo [0, 1000]
         numeros[i] = rand() % 1001;
     }
-
-    do {
+    
+    /* Input do usuário, loop infinito */
+    while(1) {
         printf("Insira um numero de 0 a 1000 (numero negativo para encerrar): ");
         scanf("%i", &alvo);
 
-        if(alvo >= 0) {
-            encontrarEm(numeros, 1000, alvo);
+        /* Terminar execução */
+        if(alvo < 0) break;
+
+        /* Procurar o numero inserido */
+        int encontrados = 0;
+        for(int i = 0; i < 1000; i++) {
+            
         }
-    } while(alvo > 0);
+    }
 
     return 0;
 }
