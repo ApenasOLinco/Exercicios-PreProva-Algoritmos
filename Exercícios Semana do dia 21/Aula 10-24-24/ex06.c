@@ -18,7 +18,7 @@ int main() {
     // Popular a matriz
     for(int i = 0; i < 4; i++) {
         for(int j = 0; j < 4; j++) {
-            // Numeros reais de 0 a 20 com uma casa decimal de precisão
+            // Numeros inteiros de 0 a 20
             matriz[i][j] = rand() % 21;
 
             /*
