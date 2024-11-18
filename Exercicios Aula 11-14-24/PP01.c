@@ -28,7 +28,9 @@ int main() {
 
         printf("Insira o nome do esportista numero %d: ", i + 5);
         fflush(stdin);
-        scanf("%[^\n]", e->nome); // O operador "->" acessa o membro de uma struct por ponteiro
+        scanf("%[^\n]", e->nome); 
+        // %[^\n] lê tudo antes do primeiro caractere de nova linha (\n) que ele encontrar.
+        // O operador "->" acessa o membro de uma struct por ponteiro
         // Para saber mais, acesse o link https://www.geeksforgeeks.org/arrow-operator-in-c-c-with-examples/
 
         printf("Insira o peso do esportista, em quilos: ");
